@@ -1,0 +1,6 @@
+elasticsearch>=8.0.0
+python-dotenv
+feedparser
+boto3
+requests
+streamlit

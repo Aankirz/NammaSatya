@@ -1,0 +1,55 @@
+# Elastic Open Crawler configuration — NammaSatya
+#
+# Deploy via Kibana → Search → Web Crawler, or run the crawler CLI:
+#   elastic-inbound-crawler crawl --config crawler/config.yml
+#
+# Schedule: every 3 hours (configure in Kibana scheduler or a cron job)
+# crawl_depth: 1  — fetch each listed URL + direct child links only
+
+output_sink: elasticsearch
+output_index: nammasatya-claims            # must match ES_INDEX in .env
+elasticsearch_url: "${ES_URL}"
+elasticsearch_api_key: "${ES_API_KEY}"
+
+# All ingest paths auto-run the ELSER pipeline via index default_pipeline.
+# No need to set pipeline here; setup.py sets it on the index.
+
+domains:
+  - url: https://bmrc.co.in/press-releases
+    crawl_depth: 1
+    extraction_rules:
+      - action: extract
+        source: html_content
+        identifier: body
+
+  - url: https://bbmp.gov.in/en/notifications
+    crawl_depth: 1
+    extraction_rules:
+      - action: extract
+        source: html_content
+        identifier: body
+
+  - url: https://bwssb.gov.in/notice-board
+    crawl_depth: 1
+    extraction_rules:
+      - action: extract
+        source: html_content
+        identifier: body
+
+  - url: https://karnataka.gov.in/press
+    crawl_depth: 1
+    extraction_rules:
+      - action: extract
+        source: html_content
+        identifier: body
+
+  - url: https://pib.gov.in/Bengaluru
+    crawl_depth: 1
+    extraction_rules:
+      - action: extract
+        source: html_content
+        identifier: body
+
+# Tag every crawled doc as official source
+field_mappings:
+  source_type: official

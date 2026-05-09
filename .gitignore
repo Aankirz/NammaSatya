@@ -1,0 +1,43 @@
+# Claude Code private config
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Next.js build output
+NammaSatya/frontend/.next/
+NammaSatya/frontend/node_modules/
+NammaSatya/frontend/out/
+
+# code-review-graph internal
+.code-review-graph/
