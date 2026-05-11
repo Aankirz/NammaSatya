@@ -37,10 +37,22 @@ def test_truncates_to_5():
          "url": f"http://x/{i}", "published_at": "2026-01-01", "indexed_at": "2026-01-01"}
         for i in range(10)
     ]
-    scores = list(range(10))  # last passage gets highest score
+    scores = [30 + i for i in range(10)]  # 30–39, all above threshold; last gets highest score
     client = _mock_client(scores)
     result = rerank("bengaluru water", passages, bedrock_client=client)
     assert len(result) == 5
+
+
+def test_returns_empty_when_all_scores_below_threshold():
+    passages = [
+        {"body": "unrelated text", "source_name": "src", "source_type": "news",
+         "url": "http://x/1", "published_at": "2026-01-01", "indexed_at": "2026-01-01"}
+        for _ in range(3)
+    ]
+    scores = [5, 10, 20]  # all below default threshold of 25
+    client = _mock_client(scores)
+    result = rerank("bmrcl metro purple line shutdown", passages, bedrock_client=client)
+    assert result == []
 
 
 def test_falls_back_to_es_order_on_exception(sample_passages):

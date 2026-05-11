@@ -487,6 +487,17 @@ mark.cite-ref sup {
 .inj-snip { font-family: var(--font-mono); font-size: 11px; color: var(--ink); text-decoration: line-through; text-decoration-color: rgba(212,58,47,.6); text-decoration-thickness: 1px; }
 .inj-meta { font-size: 10.5px; color: var(--ink-3); letter-spacing: .02em; }
 
+@keyframes shimmer {
+  0%   { background-position: -600px 0 }
+  100% { background-position: 600px 0 }
+}
+.shim {
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--bg-2) 25%, var(--rule) 50%, var(--bg-2) 75%);
+  background-size: 1200px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
 .col-3  { grid-column: span 3; }
 .col-4  { grid-column: span 4; }
 .col-5  { grid-column: span 5; }

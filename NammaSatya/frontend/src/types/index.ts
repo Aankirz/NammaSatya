@@ -37,6 +37,7 @@ export interface IndexStats {
   total_documents: number
   by_source: Record<string, number>
   by_type: Record<string, number>
+  timeline: { label: string; total: number; news: number; official: number }[]
   index: string
   as_of: string
 }

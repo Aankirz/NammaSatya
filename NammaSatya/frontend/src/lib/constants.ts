@@ -18,28 +18,28 @@ export const STEP_LABELS: Record<string, string> = {
 
 export const SAMPLE_CLAIMS: SampleClaim[] = [
   {
-    id: 'mangled',
-    label: 'Metro shutdown',
-    verdict: 'MANGLED',
-    raw: '🚨FORWARDED🚨 *URGENT* — BMRCL is shutting down the entire Purple Line on Tuesday. All metro services will be suspended. Plan your commute accordingly. Pls forward to all groups 🙏',
+    id: 'supported',
+    label: 'Cybercrime capital',
+    verdict: 'SUPPORTED',
+    raw: 'Just saw this going viral — Bengaluru alone accounted for 17,561 of the 20,587 cybercrime cases reported across 19 Indian metro cities in 2024, according to NCRB data. That is almost 85% of all metro cybercrime from one city! Is this actually true?',
   },
   {
-    id: 'supported',
-    label: 'Free water tankers',
-    verdict: 'SUPPORTED',
-    raw: 'Heard this from a friend in Bellandur — BWSSB is offering free water tankers to flood-affected areas. Anyone in Yemalur, Marathahalli or Bellandur can call to request one. Is this real?',
+    id: 'mangled',
+    label: 'Metro suspension',
+    verdict: 'MANGLED',
+    raw: '🚨FORWARDED🚨 *URGENT* — BMRCL shutting down the ENTIRE Purple Line ALL DAY this Saturday May 10! No metro services from morning to night — massive disruption across Bengaluru. Change your weekend plans!! Please forward to all groups 🙏',
   },
   {
     id: 'refuted',
-    label: 'Free metro day',
+    label: 'Fuel subsidy',
     verdict: 'REFUTED',
-    raw: 'Forwarded from Aunty group — Good news 😊 Bengaluru Metro is FREE TO RIDE on May 10 to celebrate ridership milestone. Take family. Share with everyone before they remove it.',
+    raw: 'Big news forwarded from a Karnataka govt WhatsApp group — all vehicle owners in Bengaluru will receive a ₹500 monthly fuel subsidy starting June 2026, credited directly to the bank account linked to their RC number. Apply through Seva Sindhu portal before May 25. Share before it expires!',
   },
   {
     id: 'unverified',
-    label: 'Vendor ban',
+    label: 'Diesel auto ban',
     verdict: 'UNVERIFIED',
-    raw: 'Heard from a BBMP contact — they are banning ALL street vendors near MG Road from June 1. Anyone who has a chaat stall or fruit cart on Brigade or MG should know.',
+    raw: 'My autorickshaw driver mentioned BBMP is planning to ban all diesel autos from Bengaluru city limits by July 2026 as part of a clean air initiative. Drivers will supposedly get subsidised CNG conversion loans from KSFC. Has anyone seen any official announcement about this?',
   },
 ]
 
