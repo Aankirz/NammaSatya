@@ -1,4 +1,4 @@
-# PRD: BLR Truth Check — Bengaluru Misinformation Detection Agent
+# PRD: NammaSatya — Bengaluru Misinformation Detection Agent
 
 ## Problem Statement
 

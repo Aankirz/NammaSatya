@@ -35,9 +35,10 @@ Thumbs.db
 *.swo
 
 # Next.js build output
-NammaSatya/frontend/.next/
-NammaSatya/frontend/node_modules/
-NammaSatya/frontend/out/
+app/frontend/.next/
+app/frontend/node_modules/
+app/frontend/out/
+app/frontend/tsconfig.tsbuildinfo
 
 # code-review-graph internal
 .code-review-graph/

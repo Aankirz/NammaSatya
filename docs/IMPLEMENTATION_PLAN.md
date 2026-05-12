@@ -1,4 +1,4 @@
-# Implementation Plan — BLR Truth Check
+# Implementation Plan — NammaSatya
 
 ## Directory Structure
 ```
@@ -315,8 +315,8 @@ VERDICT_COLOURS = {
     "MANGLED":     "#e67700",
 }
 
-st.set_page_config(page_title="BLR Truth Check", page_icon="🔍")
-st.title("BLR Truth Check")
+st.set_page_config(page_title="NammaSatya", page_icon="🔍")
+st.title("NammaSatya")
 st.caption("Paste any Bengaluru viral claim. Get a verdict backed by verified sources.")
 
 claim = st.text_area("Claim to verify", height=100, placeholder='"BMRCL is shutting the Purple Line on Tuesday"')

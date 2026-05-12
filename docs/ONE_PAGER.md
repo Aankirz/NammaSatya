@@ -1,4 +1,4 @@
-# BLR Truth Check — One Pager
+# NammaSatya — One Pager
 
 ## The Problem
 Every day, Bengaluru residents forward civic claims on WhatsApp that are false, mangled, or invented. "BMRCL is shutting the Purple Line." "BBMP banned plastic cups." "Water cut extended 3 days." By the time the claim reaches you, the original fact has been distorted through a dozen forwards. There is no fast, trusted way to check.
