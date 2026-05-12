@@ -1,14 +1,24 @@
 # NammaSatya
 
-[![NammaSatya demo video](assets/banner.jpeg)](assets/demo_video.mov)
+[![Watch the NammaSatya demo](https://img.youtube.com/vi/bs4gGsvaTa0/maxresdefault.jpg)](https://youtu.be/bs4gGsvaTa0?si=29d9pLJr08r-Izmn)
 
-[Watch the demo video](assets/demo_video.mov)
+[Watch the demo video](https://youtu.be/bs4gGsvaTa0?si=29d9pLJr08r-Izmn)
 
 NammaSatya is a Bengaluru civic fact-checking agent built during a hackathon. It verifies viral WhatsApp or Telegram-style claims against indexed official and trusted local sources, then returns a structured verdict with citations.
 
 The project was originally documented internally as **NammaSatya**. The current repository name and product identity are **NammaSatya**.
 
 Project submission: [Devpost](https://devpost.com/software/nammasatya)
+
+## Tech Stack
+
+[![Tech stack](https://skillicons.dev/icons?i=nextjs,react,ts,python,fastapi,aws,elasticsearch)](https://skillicons.dev)
+
+- Frontend: Next.js 15, React 19, TypeScript
+- Backend: FastAPI, Python, AWS Bedrock
+- Search and retrieval: Elasticsearch, ELSER, hybrid BM25 + sparse-vector search
+- Ingestion: Elastic Open Crawler, RSS polling
+- Operations: Kibana dashboard
 
 ## What It Does
 
