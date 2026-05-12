@@ -1,5 +1,9 @@
 # NammaSatya
 
+[![NammaSatya demo video](assets/banner.jpeg)](assets/demo_video.mov)
+
+[Watch the demo video](assets/demo_video.mov)
+
 NammaSatya is a Bengaluru civic fact-checking agent built during a hackathon. It verifies viral WhatsApp or Telegram-style claims against indexed official and trusted local sources, then returns a structured verdict with citations.
 
 The project was originally documented internally as **NammaSatya**. The current repository name and product identity are **NammaSatya**.
